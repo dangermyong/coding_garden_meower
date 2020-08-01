@@ -37,7 +37,7 @@ app.post('/mews', (req, res) => {
     const mew = {
       name: filter.clean(req.body.name.toString()),
       content: filter.clean(req.body.content.toString()),
-      created: new Date()
+      created: new Date()// date
     };
 
     mews
